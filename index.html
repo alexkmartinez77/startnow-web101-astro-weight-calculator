@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+    <style>
+
+      #checkBoxText{
+        text-align:center;
+        font-size:15px;
+      }
+
+      #newPlanetName{
+        font-size:10px;
+      }
+
+      #newPlanetModifier{
+        font-size:10px;
+      }
+
+
+
+      #table1{
+        width:100%;
+        margin-left:auto; 
+        margin-right:auto;
+        border: 1px solid black;
+            }
+
+      #table2{
+        align-content: left;
+        border: 1px solid black;
+      }
+
+      tr {
+        text-align: left;
+        align-content: left;
+      }
+
+      td {
+        text-align: left;
+      }
+
+      #firstColumn{
+        width:20%;
+        text-align: left;
+      }
+
+      #secondColumn{
+        width:10%;
+        text-align: left;
+      }
+
+      #thirdColumn{
+        width:10%;
+        text-align: left;
+      }
+
+      #fourthColumn{
+        width:60%;
+        text-align: left;
+      }
+
+      #addPlanet{
+        font-size:15px;
+      }
+      
+      #checkBoxRow{
+        font-size:15px;
+      }
+
+      #user-weight{
+        font-size:30px;
+      }
+
+      #planets{
+        font-size:40px;       
+      }
+
+      #output{
+        font-size:40px;  
+        color: azure;  
+      }
+      .jumbotron {
+        
+        min-height: 500px;
+        margin-bottom: 0px;
+        background-image: url(https://www.universetoday.com/wp-content/uploads/2009/06/dn9824-1_831.jpg);
+        background-position: 0% 25%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        text-shadow: black 0.3em 0.3em 0.3em;
+}
+    </style>
+  </head>
+  <body>
+      <div class="container" textalign="center"></div>
+      
+      <div class="page-header">
+        <h1 align="center">ASTRO WEIGHT CALCULATOR</h1>
+      <div class="jumbotron">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+       
+  <table id="table1">
+      <tr>
+        <td id="firstColumn"><input id="user-weight" type="text" placeholder="Weight (lbs)" /></td>
+        <td id="secondColumn"><button type = "submit" class="btn-primary btn-lg" id="calculate-button">CALCULATE NEW WEIGHT</button></td>
+        <td id="thirdColumn"><select id="planets" class="select-checkbox"></select></td>
+        <td id="fourthColumn"><table id="table2" style="vertical-align:middle">
+            <tr ><input type="checkbox" id="checkBox"/>- Do not recognize <strong>pluto</strong> as a planet</tr>
+            <tr><p id="addPlanet"> + Add Planet</p>    
+              
+                <input id="newPlanetName" type="text" placeholder="Enter New Planet NAME" />
+                <input id="newPlanetModifier" type="text" placeholder="Enter New Planet MODIFIER" />
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div style="text-align:center;" id="output" style="text-align:center"> </div>  
+    
+ 
+
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </body>
+</html>
